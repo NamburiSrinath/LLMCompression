@@ -71,7 +71,6 @@ def evaluate(batch_labels, batch_outputs):
 
 def inference(model, tokenizer, device, train_dataloader, dataset_name, prune_type, prune_percentage, layer_index):
     total_correct_top_1, total_correct_top_5, total_count = 0, 0, 0
-    dataset_filtered_words = {}
     model.eval()
     for batch in train_dataloader:
         with torch.no_grad():
