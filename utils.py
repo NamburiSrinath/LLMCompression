@@ -243,3 +243,14 @@ def distilbert_quantize_output_linear_layers(model):
             all_linear_layers_list.append(name)
     print(f"Total number of linear layers for global pruning are: {len(all_linear_layers_list)}")
     return all_linear_layers_list
+
+def global_pruning_quantize(linear_layers_list, prune_percentage):
+    """
+    Global pruning takes sometime to execute!
+    This is used to later quantize the model, so pruning permanently
+    """
+    parameters_to_prune = tuple((x, 'weight') for x in linear_layers_list)
+    prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=prune_percentage)
+    for x in linear_layers_list:
+        prune.remove(x, 'weight') 
+    get_global_sparsity(parameters_to_prune)
