@@ -1,7 +1,7 @@
 # LLMCompression
 Official codebase for the EMNLP 2023 findings paper titled "The Cost of Compression: Investigating the Impact of Compression on Parametric Knowledge in Language Models"
 
-Encoder-Decoder and Decoder-Only Models:
+## Encoder-Decoder and Decoder-Only Models:
 
 The code-base has command for only pruning and quantization. To run experiments for pruning+quantization, go to any of the pruning file and do the following
 
