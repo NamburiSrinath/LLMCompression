@@ -57,6 +57,13 @@ To run experiments for pruning+quantization, go to any of the pruning file and d
 <b>Note:</b> Vicuna-7B is not completely open-sourced, so the models can't be shared. But the idea should be clear by inspecting wizardlm_prune.py. Just change the model filename once you have downloaded and formatted the Vicuna-7B from Huggingface.
 Resources:
 
+Please cite our work if it's useful in your research:
+@article{namburi2023cost,
+  title={The Cost of Compression: Investigating the Impact of Compression on Parametric Knowledge in Language Models},
+  author={Namburi, Satya Sai Srinath and Sreedhar, Makesh and Srinivasan, Srinath and Sala, Frederic},
+  journal={arXiv preprint arXiv:2312.00960},
+  year={2023}
+}
 
 ## Optional TODOs
 1. Cleanup the code and document better
