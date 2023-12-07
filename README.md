@@ -1,7 +1,9 @@
 # LLMCompression
-Official codebase for the EMNLP 2023 findings paper titled "The Cost of Compression: Investigating the Impact of Compression on Parametric Knowledge in Language Models"
+Official codebase for the EMNLP 2023 findings paper titled "The Cost of Compression: Investigating the Impact of Compression on Parametric Knowledge in Language Models". 
 
-#### Resources: [Paper](https://arxiv.org/abs/2312.00960), [Twitter Thread (for short summary)](https://twitter.com/srinath_namburi/status/1729276897014522064?s=20), Poster, Presentation Slides
+We also presented this work at [ENLSP 2023](https://neurips2023-enlsp.github.io/) (a workshop at NeurIPS)
+
+#### Resources: [Paper](https://arxiv.org/abs/2312.00960), [Twitter Thread (for short summary)](https://twitter.com/srinath_namburi/status/1729276897014522064?s=20), [Poster](https://drive.google.com/file/d/1SP-X3kEaAg7XiOseNfUPnZZXdPCeWKjq/view?usp=sharing), [Presentation Slides](https://drive.google.com/file/d/1CqnehMpPHD4o7c-Disfv7iJXIvrUubRt/view?usp=sharing)
 
 Experiments are broadly divided as Encoder-only models, Decoder-only models and Encoder-Decoder models. Compression techniques include Pruning (Sec 4.1), Quantization (Sec 4.2), Pruning+Quantization (Sec 4.3) and Final Dense Layer Pruning (Sec 4.4)
 
